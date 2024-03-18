@@ -10,11 +10,11 @@ jobs:
             matrix:
                 os: [ubuntu-latest]
                 php: [8.2,8.3]
-                laravel: [10.*]
+                laravel: [10.*,11.*]
                 akeneo: [v11.*]
                 stability: [prefer-stable]
                 include:
-                    - laravel: 10.*
+                    - laravel: 10.*,11.*
                       testbench: 8.*
 
         name: P${{ matrix.php }} - L${{ matrix.laravel }} - A${{ matrix.akeneo }} - ${{ matrix.stability }} - ${{ matrix.os }}
