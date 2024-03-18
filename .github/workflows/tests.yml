@@ -14,7 +14,7 @@ jobs:
                 akeneo: [v11.*]
                 stability: [prefer-stable]
                 include:
-                    - laravel: 10.*,11.*
+                    - laravel: 11.*
                       testbench: 8.*
 
         name: P${{ matrix.php }} - L${{ matrix.laravel }} - A${{ matrix.akeneo }} - ${{ matrix.stability }} - ${{ matrix.os }}
